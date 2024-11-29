@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civic Engagement Platform</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'contact' %}">Contact</a>
+        <a href="{% url 'register' %}">Register</a>
+        <a href="{% url 'login' %}">Login</a>
+     </nav>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to the Civic Engagement Platform</h1>
+            <p>Join us in making a difference in your community!</p>
+            <a href="#stories" class="cta-btn">Read People's Stories</a>
+        </div>
+    </section>
+
+    <!-- People's Stories Section -->
+    <section id="stories">
+        <h2>People's Stories</h2>
+        <div class="stories">
+            <div class="story">
+                <p>"I participated in local community meetings and saw real changes in my neighborhood!" - Jane</p>
+            </div>
+            <div class="story">
+                <p>"Civic engagement opened my eyes to the power we hold as a community!" - John</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Civic Engagement Platform | Contact Us: info@civicengage.com</p>
+    </footer>
+</body>
+</html>
